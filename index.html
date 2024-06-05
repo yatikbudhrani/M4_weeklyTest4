@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gada Electronics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body class="bg-black text-white">
+    <div
+      id="showBtnContainer"
+      class="hidden w-full h-[100vh] flex justify-center items-center fixed top-0 z-10 bg-[rgba(0,0,0,0.5)]"
+    >
+      <div
+        class="px-8 py-2 bg-white flex items-center flex-col h-[560px] w-[450px] rounded-xl shadow-2xl text-black"
+      >
+        <img id="image" src="" class="w-[150px] h-[200px]" alt="" />
+        <p id="brandName"></p>
+        <p class="font-bold" id="phoneName"></p>
+        <span id="phone_discription"></span>
+        <button
+          class="rounded-xl bg-red-600 text-white font-bold px-4 py-2"
+          id="closeBtn"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <header class="flex px-8 md:px-16 mb-3 py-8 justify-between">
+      <h1
+        class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"
+      >
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
+          >Gada</span
+        >
+        Electronics
+      </h1>
+      <button
+        style="
+          text-shadow: rgb(255, 255, 255) 1px 0 2px;
+          background-color: rgb(100, 25, 230);
+        "
+        class="bg-purple-500 text-white px-4 py-2 rounded-xl"
+      >
+        Hot Deals
+      </button>
+    </header>
+    <div class="flex flex-col px-8 items-center gap-4">
+      <span
+        class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2"
+        >Coming Soon!</span
+      >
+      <h1
+        style="text-shadow: rgb(255, 255, 255) 0px 0 8px"
+        class="text-center text-6xl font-bold"
+      >
+        Apple Iphone 16
+      </h1>
+      <h2 class="text-2xl font-extrabold dark:text-white">
+        Weeks before the launch of the iPhone 16, it seems the Internet is
+        buzzing with leaks and rumours about the features of the next-gen
+        iPhone.
+      </h2>
+      <button
+        style="
+          text-shadow: rgb(255, 255, 255) 0px 0 8px;
+          background-color: rgb(100, 25, 230);
+        "
+        class="BuyNowBtn"
+        role="button"
+      >
+        PreOrder
+      </button>
+    </div>
+
+    <div class="flex flex-wrap justify-center">
+      <img
+        class="my-10 h-[300px] sm:h-[400px] md:h-[500px]"
+        src="https://i.gadgets360cdn.com/large/iphone_15_pro_max_14_pro_max_1694610270648.jpg?downsize=950:*"
+        alt=""
+        srcset=""
+      />
+    </div>
+
+    <div class="flex flex-col items-center mb-20">
+      <h2 class="text-3xl font-bold my-4">Search Your Phone</h2>
+      <span class="flex gap-6 py-2">
+        <input
+          id="inputBox"
+          class="rounded-xl w-[300px] sm:w-[400px] md:w-[500px] px-6 text-black"
+          type="text"
+          name=""
+          id=""
+          placeholder="Example- Oppo, iphone, Samsung & so on."
+        />
+        <button
+          id="searchBtn"
+          class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          role="button"
+        >
+          Search
+        </button>
+      </span>
+    </div>
+
+    <div
+      id="mobile_Container"
+      class="flex justify-center flex-wrap gap-20 text-white py-8"
+    ></div>
+
+    <div class="flex justify-center px-16">
+      <button
+        id="showMore"
+        class="hidden text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+        role="button"
+      >
+        Show More
+      </button>
+    </div>
+  </body>
+</html>
